@@ -1,14 +1,24 @@
 {
     "compilerOptions": {
-        "module": "commonjs",
-        "target": "es5",
-        "sourceMap": true,
+        "target": "es2015",
+        "module": "es2015",
+        "moduleResolution": "node",
+        "declaration": false,
+        "removeComments": true,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
-        "removeComments": false,
-        "noImplicitAny": false
+        "sourceMap": true,
+        "pretty": true,
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitUseStrict": false,
+        "noFallthroughCasesInSwitch": true,
+        "outDir": "./dist",
+        "rootDir": "./app"
     },
-    "exclude": [
-        "node_modules"
+    "files": [
+        "app/main.ts"
     ]
 }
